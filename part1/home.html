@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Welcome to Vecta Corp.</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+	<link rel="stylesheet" href="themes/japanese-garden-mod1.css" />
+	<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+</head>
+<body>
+   <!-- Home -->
+    <div data-role="page" data-theme="a" id="home">
+
+        <nav  data-role="header">
+             <h1 role="heading" class="ui-title">Vecta Corp.</h1>
+
+             <div data-role="navbar" data-iconpos="bottom">
+                <ul>
+                    <li><a href="#" data-icon="home" class="ui-btn-active">Home</a></li>
+                    <li><a href="#solutions" data-icon="grid">Solutions</a></li>
+                    <li><a href="#contact" data-icon="star">Contact</a></li>
+                    
+                </ul>
+                
+            </div>
+        </nav>
+        <section data-role="content">
+           <h3>Welcome</h3>
+            <p>
+                With innovative approaches and advanced methodologies, Vecta Corporation provides scalable business solutions to help companies achieve success through revenue increase, cost management, and user satisfaction. Our approach stems from the three most important business growth aspects: helping companies reach prospects, assist in converting prospects to customers, and assist in retaining those customers. This is accomplished through our interactive solutions and expertise in providing a memorable and positive user experience.
+            </p>
+            <h3>Client Testimonials</h3>
+            <div data-role="collapsibleset">
+                <div data-role="collapsible">
+                   <h4>Chevy Dealers Association</h4>
+                    <p>Throughout the years we have worked with Vecta Corporation, we have always been amazed at the level of dedication and professionalism that they have provided us and our WGDC products. It is this commitment that has increased both our income and exposure exponentially.</p>
+                    <p>Iona Ford<br>
+                        President<br>
+                        Chevy Dealers Association</p>
+                </div>
+                <div data-role="collapsible">
+                   <h4>Profits Financial, Inc.</h4>
+                    <p>Incredible results from an incredible effort by the Vecta Corporation team! We are very pleased with the business benefits we have rceived by working with them.</p>
+                    <p>Robin Banks<br>
+                        CEO<br>
+                        Profits Financial, Inc.</p>
+                </div>
+            </div>
+        </section>
+        <footer data-role="footer" data-position="fixed">
+            <h4>Copyright 2015 Vectacorp Corporation</h4>
+        </footer>
+
+    </div>
+
+    <!-- solutions -->
+    <div data-role="page" data-theme="a" id="solutions">
+
+        <header data-role="header" >
+          <h1>Vecta Corp.</h1>
+
+             <div data-role="navbar" data-iconpos="bottom">
+                <ul >
+                    <li><a href="#home" data-icon="home" >Home</a></li>
+                    <li><a href="#" data-icon="grid" class="ui-btn-active">Solutions</a></li>
+                    <li><a href="#contact" data-icon="star">Contact</a></li>
+                </ul>
+                
+            </div>
+        </header>
+        <section data-role="content" >
+            <h3 >Our Solutions</h3> 
+            <ul data-role="listview" data-inset="true">
+                <li><a href="#vProspect" data-rel="popup"  data-transition="pop">vProspect 2.0</a></li>
+                <li><a href="#vConvert"  data-rel="popup"  data-transition="pop">vConvert 2.0</a></li>
+                <li><a href="#vRetain"  data-rel="popup"  data-transition="pop">vRetain 1.0</a></li>
+            
+            </ul>
+            <div data-role="popup" id="vProspect" data-theme="a">
+               <p >Define and research your target audience, define your strategy to reach that audience and present a strong and memorable brand to that audience.
+                </p>
+            </div> 
+            <div data-role="popup" id="vConvert" data-theme="a">
+               <p >Create a highly user-friendly and easy-to-navigate information architecture that will help your prospects interact with the company on a highly interactive level.
+                </p>
+            </div> 
+            <div data-role="popup" id="vRetain" data-theme="a">
+               <p >Build on existing customer relationships to improve productivity and maximize customer loyalty, while growing revenues.
+                </p>
+            </div> 
+
+        </section>
+        <footer data-role="footer" data-position="fixed">
+            <h4>Copyright 2015 Vectacorp Corporation</h4>
+        </footer>
+    </div>
+
+
+    <!-- Contact -->
+    <div data-role="page" data-theme="a" id="contact">
+        <header data-role="header">
+            <h1>Vecta Corp.</h1>
+           
+             <div data-role="navbar" data-iconpos="bottom">
+                <ul>
+                    <li><a href="#home" data-icon="home" >Home</a></li>
+                    <li><a href="#solutions" data-icon="grid">Solutions</a></li>
+                    <li><a href="#" data-icon="star" class="ui-btn-active">Contact</a></li>
+                    
+                </ul>
+                
+            </div>
+        </header>
+        <section data-role="content">
+            <h3>Contact</h3> 
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="name">
+
+                <label for="email">Email:</label>
+                <input type="text" name="email" id="email">
+
+                <label for="interest">Product Interest</label>
+                <select name="interest" id="interest">
+                    <option value="vProspect">vProspect</option>
+                    <option value="vConvert">vConvert</option>
+                    <option value="vRetain">vRetain</option>
+                    <option value="vRetain">vRetain</option>
+                </select>
+
+                <label for="comments">Questions/Comments :</label>
+                <textarea name="comments" id="comments"></textarea>
+                <br>
+                <input type="submit" value="Submit" data-inline="true">
+            </form>
+        </section>
+        <footer data-role="footer" data-position="fixed">
+            <h4>Copyright 2015 Vectacorp Corporation</h4>
+        </footer>
+    </div>   
+</body>
+</html>

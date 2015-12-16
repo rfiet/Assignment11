@@ -1,0 +1,46 @@
+        #details header div{
+             float: left;   
+        }
+        #home nav #result li .numReports, #reports section #reportList li .numReports{
+           float: right;
+            display: inline-block;
+            width: 30px;
+            position: relative;
+            top: -11px;
+            right: -1em; 
+        }
+         #reports section #reportList li .numReports{
+            top: -15px;
+         }
+        #home nav #result li a, #reports section #reportList li a{
+        /*    display: block;
+            width: 88%;  */
+            margin-left: 10px;
+        }
+        #home nav #result li h3, #reports section #reportList li h3{
+            display: inline-block;
+            width: 80%;
+            font-size: 1.2em;
+        }
+        #reports header, #details header{
+            height: 50px;
+        }
+        #reports .searchButton, #details .searchButton{
+            margin-top: 5px;
+        }
+
+        .ui-li-count{
+                border-radius: 19px;
+        }
+        .ui-li-count{
+                line-height: 2.1em;
+                min-height: 2.1em;
+                min-width: 0.64em;
+                max-width: 1.5em;
+        }
+        ul#detailsList li a  h3{
+                font-size: 1.3em;
+        }
+        header.ui-header h1.ui-title{
+            font-size: 1.15em;
+        }

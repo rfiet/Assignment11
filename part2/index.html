@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Welcome to Vecta Corp.</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+	<link rel="stylesheet" href="themes/japanese-garden-mod1.css" />
+	<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+	<link rel="stylesheet" href="css/styles.css" />
+	<script src="js/home.js"></script>
+    <script src="js/reports.js"></script> 
+
+</head>
+<body>
+   <!-- Home -->
+    <div data-role="page" data-theme="a" id="home" data-cache="false">
+
+        <nav  data-role="header">
+             <h1 role="heading" class="ui-title">Directory</h1>
+             <ul  id="result" data-count-theme="a" data-role="listview" data-inset="true" data-filter="true" data-filter-reveal="true" >
+        	</ul>
+        </nav>
+        <section data-role="content" id="homeSection">
+           
+           <h3>Welcome to the Directory!</h3>         
+            <p>
+                Search this Directory for Vecta Corp Employees
+            </p>
+                  
+        </section>
+        <footer data-role="footer" data-position="fixed">
+            <h4>Copyright 2015 Vectacorp Corporation</h4>
+        </footer>
+
+    </div>
+
+    <!-- details  Page-->
+    <div data-role="page" data-theme="a" data-cache="false" id="details">
+
+        <header data-role="header" >
+          <div><a href="#" data-rel="back" class="ui-btn-left ui-btn ui-icon-back ui-btn-icon-left ui-btn-inline ui-shadow ui-corner-all searchButton" data-role="button" role="button">Back</a></div><h1>Employee Details</h1>
+          <a href="#home" data-rel="search" class="ui-btn-right ui-btn ui-icon-search ui-btn-icon-left ui-btn-inline ui-shadow ui-corner-all searchButton" data-role="button" role="button">Search</a>
+        </header>
+        <section data-role="content" >
+            <div id="empDetail"></div>
+
+            <ul id="detailsList" data-role="listview" data-inset="true"></ul>
+
+        </section>
+        <footer data-role="footer" data-position="fixed">
+            <h4>Copyright 2015 Vectacorp Corporation</h4>
+        </footer>
+    </div>
+
+    <!-- Reports Page -->
+    <div data-role="page" data-theme="a" id="reports">
+        <header data-role="header" >
+          <div><a href="#" data-rel="back" class="ui-btn-left ui-btn ui-icon-back ui-btn-icon-left ui-btn-inline ui-shadow ui-corner-all searchButton" data-role="button" role="button">Back</a></div><h1>Direct Reports</h1>
+          <a href="#home" data-rel="search" class="ui-btn-right ui-btn ui-icon-search ui-btn-icon-left ui-btn-inline ui-shadow ui-corner-all searchButton" data-role="button" role="button">Search</a>
+        </header>
+        <section data-role="content" >
+            <div id="reportDetail"></div>
+
+            <ul id="reportList" data-count-theme="a" data-role="listview" ></ul>
+
+        </section>
+        <footer data-role="footer" data-position="fixed">
+            <h4>Copyright 2015 Vectacorp Corporation</h4>
+        </footer>
+    </div> 
+ 
+</body>
+</html>
